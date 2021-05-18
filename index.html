@@ -1,112 +1,121 @@
 <html>
-    <head>
-        <title>Dah! Dah! - Gordon Beeming Demos</title>
 
-        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.txt">
-        <meta name="msapplication-TileColor" content="#f5f5f5">
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-        <meta name="theme-color" content="#242424">
+<head>
+    <title>Dah! Dah! - Gordon Beeming Demos</title>
 
-        <style>
-            /* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body, html {
-  height: 100%;
-  margin: 0;
-  padding:0;
-}
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.txt">
+    <meta name="msapplication-TileColor" content="#f5f5f5">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#242424">
 
-.bgimg {
-    background-color: #242424;
-  /* Background image */
-  background-image: url('/images/background.jpg');
-  /* Full-screen */
-  height: 100%;
-  /* Center the background image */
-  background-position: center;
-  /* Scale and zoom in the image */
-  background-size: cover;
-  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
-  position: relative;
-  /* Add a white text color to all elements inside the .bgimg container */
-  color: #f5f5f5;
-  /* Add a font */
-  font-family: "Courier New", Courier, monospace;
-  /* Set the font-size to 25 pixels */
-  font-size: 25px;
-}
+    <style>
+        /* Set height to 100% for body and html to enable the background image to cover the whole page: */
+        
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .bgimg {
+            background-color: #242424;
+            /* Background image */
+            background-image: url('/images/background.jpg');
+            /* Full-screen */
+            height: 100%;
+            /* Center the background image */
+            background-position: center;
+            /* Scale and zoom in the image */
+            background-size: cover;
+            /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+            position: relative;
+            /* Add a white text color to all elements inside the .bgimg container */
+            color: #f5f5f5;
+            /* Add a font */
+            font-family: "Courier New", Courier, monospace;
+            /* Set the font-size to 25 pixels */
+            font-size: 25px;
+        }
+        
+        a {
+            color: #f5f5f5;
+            text-decoration: none;
+        }
+        
+        h1 {
+            display: block;
+            font-size: 2em;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+        
+        @media screen and (max-width: 940px) {
+            h1 {
+                font-size: 1.75em;
+            }
+        }
+        
+        @media screen and (max-width: 820px) {
+            h1 {
+                font-size: 1.50em;
+            }
+        }
+        
+        @media screen and (max-width: 675px) {
+            h1 {
+                font-size: 1.25em;
+            }
+        }
+        
+        @media screen and (max-width: 565px) {
+            h1 {
+                font-size: 1.1em;
+            }
+        }
+        /* Position text in the top-right corner */
+        
+        .top-right {
+            position: absolute;
+            top: 0;
+            right: 16px;
+        }
+        /* Position text in the bottom-left corner */
+        
+        .bottom-left {
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+        }
+    </style>
+</head>
 
-a{    
-  color: #f5f5f5;
-  text-decoration: none;
-}
+<body>
 
-h1{
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-@media screen and (max-width: 940px) {
-  h1{
-    font-size: 1.75em;
-  }
-}
-@media screen and (max-width: 820px) {
-  h1{
-    font-size: 1.50em;
-  }
-}
-@media screen and (max-width: 675px) {
-  h1{
-    font-size: 1.25em;
-  }
-}
-@media screen and (max-width: 565px) {
-  h1{
-    font-size: 1.1em;
-  }
-}
-/* Position text in the top-right corner */
-.top-right {
-  position: absolute;
-  top: 0;
-  right: 16px;
-}
+    <div class="bgimg">
+        <div class="top-right">
+            <h1>Dah! Dah!</p>
+        </div>
+        <div class="bottom-left">
+            <p><a href="https://beeming.dev">Gordon Beeming</a> <a href="https://go.beeming.net/dahdah-demos">Demos</a></p>
+        </div>
+    </div>
+</body>
 
-/* Position text in the bottom-left corner */
-.bottom-left {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
-
-        </style>
-    </head>
-    <body>
-
-        <div class="bgimg">
-            <div class="top-right">
-              <h1>Dah! Dah!</p>
-            </div>
-            <div class="bottom-left">
-              <p><a href="https://beeming.dev">Gordon Beeming</a> <a href="https://github.com/Gordon-Beeming/Demos">Demos</a></p>
-            </div>
-          </div>
-    </body>
-</html> 
+</html>
